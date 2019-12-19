@@ -13,10 +13,20 @@ html {
     left: 10px;
   }
   .slick-next:before {
-    content:url("./assets/misc/right-arrow.svg");
+    content: ' ';
+    display: block;
+    background-image: url(./assets/misc/right-arrow-test.svg);
+    background-size: 28px 28px;
+    height: 28px;
+    width: 28px;
   }
   .slick-prev:before {
-    content:url("./assets/misc/left-arrow.svg");
+    content: ' ';
+    display: block;
+    background-image: url(./assets/misc/left-arrow-test.svg);
+    background-size: 28px 28px;
+    height: 28px;
+    width: 28px;
   }
   .slick-dots {
     position: absolute;
@@ -46,6 +56,16 @@ html {
     opacity: .75;
     color: rgb(249, 249, 249);
   }
+  .slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0 -10px;
+    padding: 0;
+}
+.slick-slide {
+  padding: 10px;
+}
   .carousel__background {
     width: 100%;
   }
@@ -55,6 +75,7 @@ html {
     background: linear-gradient(rgb(48, 50, 62), rgb(30, 31, 42)) 0% 0% / cover;
     overflow: hidden;
     border-radius: 4px;
+    cursor: pointer;
   }
   .carousel__image-container::after {
     bottom: 0px;
